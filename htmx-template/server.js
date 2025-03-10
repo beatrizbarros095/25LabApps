@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get("/api/clicked", (req, res, next) => {
     const seed = Math.floor(Math.random() * 1000);
-    res.send(`<img src='https://picsum.photos/200?random=${seed}' alt='Image ${seed}'><p>Card ${seed}</p>`);
+    res.send(`<img src='FOTO.jpg' alt='Image ${seed}'><p>Card ${seed}</p>`);
 })
 
 app.listen(3000, () => {
