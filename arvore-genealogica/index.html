@@ -36,20 +36,25 @@
 
 <body>
     <div id="main">
-        <h1>Família de Nome de alguém</h1>
+        <h1>Família Barros Silva </h1>
     </div>
 
     <div hx-get="./bio/pai.html" hx-swap="innerHTML" hx-target="#main">
         Pai
     </div>
 
-    <div>
+    <div hx-get="./bio/mae.html" hx-swap="innerHTML" hx-target="#main"> 
         Mãe
     </div>
 
-    <div>
-        Filho
+    <div hx-get="./bio/eu.html" hx-swap="innerHTML" hx-target="#main"> 
+        Eu
     </div>
+
+    <div hx-get="./bio/daniel.html" hx-swap="innerHTML" hx-target="#main"> 
+        Daniel
+    </div>
+
 
     <footer>
         Vê o site do <a href="https://htmx.org/">HTMX</a> para mais informação sobre esta tecnologia.
