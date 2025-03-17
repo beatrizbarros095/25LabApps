@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet">
 
-
     <title>A minha família</title>
     <script src="https://unpkg.com/htmx.org@2.0.4"
         integrity="sha384-HGfztofotfshcF7+8n44JQL2oJmowVChPTg48S+jvZoztPfvwD79OC/LTtG6dMp+"
@@ -24,7 +23,7 @@
                 border-radius: 10px;
             }
             div:hover {
-                background-color: #dff9ff;
+                background-color: #ffc0c2;
             }
             #main {
                 background-color: #ffffff;
@@ -37,19 +36,25 @@
             } 
              
             body {
+                color: rgb(0, 0, 56);
                 font-family: 'Galindo', cursive;
-                font-size: 25px;
+                font-size: 30px;
+                background-image: url(./bio/FAM.jpg);
+                text-align: left;
             }
+
         </style>
 </head>
-
 <body>
+
+    
     <div id="main">
-        <h1>Família Barros Silva </h1>
+        <h1>Família Barros Silva </h1><p class="htmx-indicator" id="spinner">ola estou a carregar </p>
     </div>
 
-    <div hx-get="./bio/pai.html" hx-swap="innerHTML" hx-target="#main">
-        Pai 
+    <div hx-get="./bio/pai.html" hx-swap="innerHTML" hx-target="#main" hx-indicator="#spinner">
+            Pai
+     
     </div>
 
     <div hx-get="./bio/mae.html" hx-swap="innerHTML" hx-target="#main"> 
@@ -60,13 +65,6 @@
         Eu
     </div>
 
-    <div hx-get="./bio/daniel.html" hx-swap="innerHTML" hx-target="#main"> 
-        Daniel 
-    </div>
-
-    <div hx-get="./bio/isabel.html" hx-swap="innerHTML" hx-target="#main"> 
-        Tia Isabel 
-    </div>
 
 
     <footer>
