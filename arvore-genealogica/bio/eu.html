@@ -11,9 +11,14 @@
         background-position: right center;
         background-repeat: no-repeat;
         color: rosybrown;
+        border-radius: 20px;
+        overflow: hidden;
+        border: solid 5px rgb(56, 0, 0);
     }
 
-
+    .daniel {
+    border: solid 5px rgb(56, 0, 0);
+} 
 
     </style>
  
@@ -28,8 +33,8 @@
 
 </div>
 
-<div hx-get="./bio/daniel.html" hx-swap="innerHTML" hx-target="#main"> 
+<div class="daniel"
+hx-get="./bio/daniel.html" hx-swap="innerHTML" hx-target="#main" hx-indicator="#spinner"> 
     Daniel 
 </div>
-
  
